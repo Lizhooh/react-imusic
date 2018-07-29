@@ -35,6 +35,7 @@ You can also directly view the [Example](https://github.com/Lizhooh/redux-fine/t
 name | type | default | description
 :--- | :--- | :--- | :---
 src | string | null | __@required__
+play | bool | false |
 autoPlay | bool | false |
 preload | bool | true |
 initSeek | number | 0 |

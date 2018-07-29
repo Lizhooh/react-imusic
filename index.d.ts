@@ -12,6 +12,7 @@ interface IProgressData {
 
 export interface IMusicProps {
     src: string,
+    play: boolean,
     autoPlay?: boolean,
     preload?: boolean,
     initSeek?: number,

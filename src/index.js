@@ -6,8 +6,9 @@ const DEBUG = false;
 export default class Music extends Component {
 
     static defaultProps = {
-        autoPlay: false,
         src: null,
+        play: false,
+        autoPlay: false,
         preload: true,
         initSeek: 0,
 
@@ -32,8 +33,9 @@ export default class Music extends Component {
     }
 
     static propTypes = {
-        autoPlay: propTypes.bool,
         src: propTypes.string,
+        play: propTypes.bool,
+        autoPlay: propTypes.bool,
         preload: propTypes.bool,
         initSeek: propTypes.number,
 
