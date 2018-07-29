@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "rc-slider": "^8.6.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-imusic": "^1.0.2",
     "react-scripts": "1.1.4"
   },
   "scripts": {
