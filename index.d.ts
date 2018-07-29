@@ -1,15 +1,5 @@
 import * as React from "react";
 
-interface IProgressData {
-    currentTime: number,
-    duration: number,
-    seeking: boolean,
-    buffered: number,
-    seekable: number,
-    percent: number,
-    networkState: number,
-}
-
 export interface IMusicProps {
     src: string,
     play: boolean,
@@ -17,7 +7,15 @@ export interface IMusicProps {
     preload?: boolean,
     initSeek?: number,
 
-    onProgress?(data: IProgressData): any,
+    onProgress?(data: {
+        currentTime: number,
+        duration: number,
+        seeking: boolean,
+        buffered: number,
+        seekable: number,
+        percent: number,
+        networkState: number,
+    }): any,
     onError?(e: ErrorEvent): any,
     onLoadStart?(e: Event): any,
     onLoadMetaData?(e: Event): any,
@@ -40,5 +38,5 @@ export interface IMusicProps {
 export default class IMusic extends React.Component<IMusicProps> {
     reLoad(): void;
     isPlay(): boolean;
-    seek(val: number): void;
+    seek(time: number): void;
 }

@@ -12,6 +12,8 @@ npm install react-imusic
 ### Usage
 
 ```js
+import Music from 'react-imuisc';
+
 <Music
     ref={r => this.music = r}
     src={list[index].url}
