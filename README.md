@@ -15,14 +15,10 @@ npm install react-imusic
 import Music from 'react-imuisc';
 
 <Music
-    ref={r => this.music = r}
     src={list[index].url}
     play={play}
     onProgress={d => {
-        if (this.$lock !== true) {
-            this.slider.update(d.currentTime, d.duration);
-            this.timetext.update(d.currentTime, d.duration);
-        }
+        // ...
     }}
 />
 ```
